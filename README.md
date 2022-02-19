@@ -1,15 +1,5 @@
 # 通过例子学 Rust
 
-![Build Status](https://github.com/rust-lang-cn/rust-by-example-cn/workflows/CI/badge.svg)
-[![LICENSE-MIT](https://img.shields.io/badge/license-MIT-green)](https://raw.githubusercontent.com/rust-lang-cn/rust-by-example-cn/master/LICENSE-MIT)
-[![LICENSE-APACHE](https://img.shields.io/badge/license-Apache%202-blue)](https://raw.githubusercontent.com/rust-lang-cn/rust-by-example-cn/master/LICENSE-APACHE)
-[![GitHub last commit](https://img.shields.io/github/last-commit/rust-lang-cn/rust-by-example-cn?color=gold)](https://github.com/rust-lang-cn/rust-by-example-cn/commits/master)
-[![GitHub contributors](https://img.shields.io/github/contributors/rust-lang-cn/rust-by-example-cn?color=pink)](https://github.com/rust-lang-cn/rust-by-example-cn/graphs/contributors)
-![Locatized 100%](https://img.shields.io/badge/localized-100%25-purple)
-[![rustwiki.org](https://img.shields.io/website?up_message=rustwiki.org&url=https%3A%2F%2Frustwiki.org)](https://rustwiki.org)
-
-> Chinese translation of the [Rust By Example][rust-by-example]
->
 > - 本文档按照 [**Rust 文档翻译指引**](https://github.com/rust-lang-cn/rust-translation-guide)规范进行翻译。
 > - 首次于 2016-08-07 翻译完全部内容，欢迎纠正——最后更新时间 2022-01-26。
 
