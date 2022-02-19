@@ -32,4 +32,6 @@ $ mdbook serve
 为了能够运行这些示例，你必须要连接到网络；当然你可以离线阅读所有这些内容。
 
 ## 加入个人笔记
-
+```
+git pull https://github.com/kscale/rust-by-example-cn.git
+```
