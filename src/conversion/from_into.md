@@ -9,8 +9,17 @@
 比如，可以很容易地把 `str` 转换成 `String`：
 
 ```rust
-let my_str = "hello";
-let my_string = String::from(my_str);
+
+fn main(){
+    //&str类型
+    let my_str = "hello";
+    //String类型
+    let my_string = String::from(my_str);
+
+    
+    println!("{}",my_str);
+    println!("{}",my_string);
+}
 ```
 
 也可以为我们自己的类型定义转换机制：
