@@ -19,6 +19,20 @@ fn main() {
     }
 }
 ```
+试一下
+```rust,editable
+fn main() {
+    let triple = (0, -2, 3);
+    // 试一试 ^ 将不同的值赋给 `triple`
+
+    println!("Tell me about {:?}", triple);
+    // match 可以解构一个元组
+    match triple {
+        _      => println!("It doesn't matter what they are"),
+        // `_` 表示不将值绑定到变量
+    }
+}
+```
 
 ### 参见：
 
