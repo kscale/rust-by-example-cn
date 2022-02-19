@@ -111,4 +111,4 @@ fn main() {
 ```
 
 
-【函数内容学习可见https://course.rs/basic/method.html】
+【方法内容学习可见https://course.rs/basic/method.html】
