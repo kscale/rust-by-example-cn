@@ -1,6 +1,78 @@
 # 方法
 
 方法（method）是依附于对象的函数。这些方法通过关键字 `self` 来访问对象中的数据和其他。方法在 `impl` 代码块中定义。
+```rust,editable
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+//在一个 impl 块内，Self 指代被实现方法的结构体类型，self 指代此类型的实例
+// impl Rectangle{
+//     fn area(self:&Self)->u32{          //可简写为  (&self)
+//         self.width * self.height
+//     }
+// }
+
+
+impl Rectangle{
+    fn area(&self)->u32{          
+        self.width * self.height
+    }
+}
+
+impl Rectangle {
+    fn width(&self)->bool{
+        self.width>0
+    }
+}
+
+fn main() {
+    let rect1 = Rectangle { width: 30, height: 50 };
+
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        rect1.area()
+    );
+
+    if rect1.width() {
+        println!("The rectangle has a nonzero width; it is {}", rect1.width);
+    }
+
+    //访问的是字段，不是实现的方法
+    // if rect1.width{
+    //     println!("The rectangle has a nonzero width; it is {}", rect1.width);
+    // }
+}
+
+```
+
+一般来说，方法跟字段同名，往往适用于实现 getter 访问器
+下面的例子，width()方法与width 字段同名
+```rust,editable
+#[derive(Debug)]
+pub struct Rectangle{
+    width:u32,
+    height:u32,
+
+}
+
+impl Rectangle {
+    pub fn new(width: u32, height: u32) -> Self {
+        Rectangle { width, height }
+    }
+    pub fn width(&self) -> u32 {
+        return self.width;
+    }
+}
+
+fn main(){
+    let rect1=Rectangle::new(30,50);
+    println!("{}",rect1.width());
+}
+
+```
+
 
 ```rust,editable
 struct Point {
